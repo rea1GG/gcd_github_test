@@ -15,7 +15,10 @@ public class UserController {
     @Autowired
     UserMapper userMapper;
 
-
+    @PostMapping("/hello")
+    public String Hello(){
+        return "hello";
+    }
     @PostMapping("/addUser")
     public int addUser(User user){
         return userMapper.insert(user);

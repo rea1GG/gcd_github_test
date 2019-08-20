@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 
-@Mapper
+@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
     int insert(User record);
